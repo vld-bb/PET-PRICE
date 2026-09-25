@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#059669" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Icon Badge -->
+  <g transform="translate(10, 10)">
+    <rect width="80" height="80" rx="22" fill="url(#badgeGrad)" filter="url(#shadow)" />
+    <!-- Paw Print Inside Badge -->
+    <path d="M 40 56 C 34 56, 27 50, 27 44 C 27 39, 33 37, 40 40 C 47 37, 53 39, 53 44 C 53 50, 46 56, 40 56 Z" fill="#ffffff" />
+    <circle cx="27" cy="27" r="5.5" fill="#ffffff" />
+    <circle cx="36" cy="21" r="6" fill="#ffffff" />
+    <circle cx="45" cy="21" r="6" fill="#ffffff" />
+    <circle cx="54" cy="27" r="5.5" fill="#ffffff" />
+    <!-- Sparkle accent -->
+    <path d="M 64 12 L 66 16 L 70 18 L 66 20 L 64 24 L 62 20 L 58 18 L 62 16 Z" fill="#fef08a" />
+  </g>
+
+  <!-- Typography -->
+  <text x="106" y="54" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" fill="#0f172a" letter-spacing="-0.5">
+    Lemmiku<tspan fill="url(#textGrad)">Hind</tspan>
+  </text>
+  
+  <!-- EST Badge -->
+  <rect x="328" y="30" width="38" height="20" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+  <text x="347" y="44" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="10" fill="#047857" text-anchor="middle" letter-spacing="0.5">EST</text>
+
+  <!-- Tagline -->
+  <text x="107" y="74" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b" letter-spacing="0.2">
+    Eesti lemmikloomatoidu hinnavõrdlus
+  </text>
+</svg>
